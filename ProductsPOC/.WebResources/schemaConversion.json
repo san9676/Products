@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/ProductsPOC/Service Descriptors/productspoc.Product-Product.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1676373766056"
+    },
+    {
+        "jsonSchemaLocation": "/ProductsPOC/Service Descriptors/productspoc.Product-Product.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.eniquesol.com/productDetailsResposne"
+    }
+]}

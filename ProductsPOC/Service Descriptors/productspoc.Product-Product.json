@@ -1,0 +1,574 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Product",
+    "description" : "Product service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/v1/productdetails" : {
+      "post" : {
+        "summary" : "postProduct",
+        "description" : "postProduct",
+        "operationId" : "post-v1-productdetails",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/ProductDetails"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a ProductDetailsResponse to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/ProductDetailsResponse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "productFamily" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "beInfo" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/beInfo",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "serviceProgram" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "serviceLevel" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/serviceLevel",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "offerDetails" : {
+      "type" : "object",
+      "properties" : {
+        "parentOfferType" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/parentOfferType",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "productDetails" : {
+      "type" : "object",
+      "properties" : {
+        "pidMatchingValue" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/pidMatchingValue",
+            "uniqueItems" : false
+          }
+        },
+        "totalACVProductNetAmtUSD" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "totalNonACVProductNetAmtUSD" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "productFamily" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/productFamily",
+            "uniqueItems" : false
+          }
+        },
+        "totalACVProductNetAmt" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "totalNonACVProductNetAmt" : {
+          "type" : "number",
+          "format" : "double"
+        }
+      }
+    },
+    "serviceCategory" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "allocatedServiceGrpInfo" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/allocatedServiceGrpInfo",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "ProductDetails" : {
+      "type" : "object",
+      "properties" : {
+        "preProductDetails" : {
+          "$ref" : "#/definitions/preProductDetails"
+        },
+        "preServiceDetails" : {
+          "$ref" : "#/definitions/preServiceDetails"
+        },
+        "optyDetails" : {
+          "$ref" : "#/definitions/optyDetails"
+        },
+        "productDetails" : {
+          "$ref" : "#/definitions/productDetails"
+        },
+        "serviceDetails" : {
+          "$ref" : "#/definitions/serviceDetails"
+        },
+        "offerDetails" : {
+          "$ref" : "#/definitions/offerDetails"
+        },
+        "subscriptionDetails" : {
+          "$ref" : "#/definitions/subscriptionDetails"
+        }
+      }
+    },
+    "buyProg" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "termInfo" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/termInfo",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "serviceDetails" : {
+      "type" : "object",
+      "properties" : {
+        "totalACVServiceNetAmtUSD" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "totalNonACVServiceNetAmtUSD" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "serviceCategory" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/serviceCategory",
+            "uniqueItems" : false
+          }
+        },
+        "totalACVServiceNetAmt" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "totalNonACVServiceNetAmt" : {
+          "type" : "number",
+          "format" : "double"
+        }
+      }
+    },
+    "pidMatchingValue" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "beInfo" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/beInfo",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "subOfferType" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "recurringFlag" : {
+          "type" : "string"
+        },
+        "netPrice" : {
+          "type" : "number",
+          "format" : "double"
+        }
+      }
+    },
+    "preServiceDetails" : {
+      "type" : "object",
+      "properties" : {
+        "totalACVServiceNetAmtUSD" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "totalNonACVServiceNetAmtUSD" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "serviceCategory" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/serviceCategory",
+            "uniqueItems" : false
+          }
+        },
+        "totalACVServiceNetAmt" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "totalNonACVServiceNetAmt" : {
+          "type" : "number",
+          "format" : "double"
+        }
+      }
+    },
+    "roDetails" : {
+      "type" : "object",
+      "properties" : {
+        "roFlag" : {
+          "type" : "string"
+        },
+        "buyProg" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/buyProg",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "acvDetails" : {
+      "type" : "object",
+      "properties" : {
+        "acvFlag" : {
+          "type" : "string"
+        },
+        "roDetails" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/roDetails",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "preProductDetails" : {
+      "type" : "object",
+      "properties" : {
+        "pidMatchingValue" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/pidMatchingValue",
+            "uniqueItems" : false
+          }
+        },
+        "totalACVProductNetAmtUSD" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "totalNonACVProductNetAmtUSD" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "productFamily" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/productFamily",
+            "uniqueItems" : false
+          }
+        },
+        "totalACVProductNetAmt" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "totalNonACVProductNetAmt" : {
+          "type" : "number",
+          "format" : "double"
+        }
+      }
+    },
+    "serviceLevel" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "beInfo" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/beInfo",
+            "uniqueItems" : false
+          }
+        },
+        "cxAttr" : {
+          "$ref" : "#/definitions/cxAttr"
+        }
+      }
+    },
+    "cxAttr" : {
+      "type" : "object",
+      "properties" : {
+        "GSP" : {
+          "type" : "string"
+        },
+        "cspLevel" : {
+          "type" : "string"
+        }
+      }
+    },
+    "subBeInfo" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "acvDetails" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/acvDetails",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "allocatedServiceGrpInfo" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "serviceProgram" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/serviceProgram",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "parentOfferType" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "subOfferType" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/subOfferType",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "optyDetails" : {
+      "type" : "object",
+      "properties" : {
+        "preTotalProdAttriNetAmtUSD" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "preTotalSerAttriNetAmtUSD" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "preTotalBuyProgNetAmtUSD" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "preTotalProdAttriNetAmt" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "preTotalSerAttriNetAmt" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "preTotalBuyProgNetAmt" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "optyNumber" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "quoteId" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "sfdcOptyNumber" : {
+          "type" : "string"
+        },
+        "currencyCode" : {
+          "type" : "string"
+        },
+        "user" : {
+          "type" : "string"
+        },
+        "publishedDate" : {
+          "type" : "string"
+        },
+        "eaFlag" : {
+          "type" : "string"
+        },
+        "combinedServiceFlag" : {
+          "type" : "string"
+        },
+        "totalProdAttriNetAmtUSD" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "totalSerAttriNetAmtUSD" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "totalBuyProgNetAmtUSD" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "totalProdAttriNetAmt" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "totalSerAttriNetAmt" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "totalBuyProgNetAmt" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "subscriptionDetails" : {
+      "type" : "object",
+      "properties" : {
+        "partDetails" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/partDetails",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "ProductDetailsResponse" : {
+      "type" : "object",
+      "properties" : {
+        "preProductDetails" : {
+          "$ref" : "#/definitions/preProductDetails"
+        },
+        "preServiceDetails" : {
+          "$ref" : "#/definitions/preServiceDetails"
+        },
+        "optyDetails" : {
+          "$ref" : "#/definitions/optyDetails"
+        },
+        "productDetails" : {
+          "$ref" : "#/definitions/productDetails"
+        },
+        "serviceDetails" : {
+          "$ref" : "#/definitions/serviceDetails"
+        },
+        "offerDetails" : {
+          "$ref" : "#/definitions/offerDetails"
+        },
+        "subscriptionDetails" : {
+          "$ref" : "#/definitions/subscriptionDetails"
+        }
+      }
+    },
+    "termInfo" : {
+      "type" : "object",
+      "properties" : {
+        "lineId" : {
+          "type" : "string"
+        },
+        "partnerIntent" : {
+          "type" : "string"
+        },
+        "sellerIntent" : {
+          "type" : "string"
+        },
+        "extNetPrice" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "term" : {
+          "type" : "number",
+          "format" : "double"
+        }
+      }
+    },
+    "partDetails" : {
+      "type" : "object",
+      "properties" : {
+        "partNumber" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "quantity" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "initialTerm" : {
+          "type" : "string"
+        },
+        "autoRenewalTerm" : {
+          "type" : "string"
+        }
+      }
+    },
+    "beInfo" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "subBeInfo" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/subBeInfo",
+            "uniqueItems" : false
+          }
+        }
+      }
+    }
+  }
+}
