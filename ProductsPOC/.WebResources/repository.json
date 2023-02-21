@@ -1,7 +1,13 @@
 {
     "records": [],
-    "resources": [{
-        "location": "Service Descriptors/productspoc.Product-Product.json",
-        "type": "generated"
-    }]
+    "resources": [
+        {
+            "location": "Service Descriptors/productspoc.Product-Product.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/test.Resource-Resource.json",
+            "type": "generated"
+        }
+    ]
 }

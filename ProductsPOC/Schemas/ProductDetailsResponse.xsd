@@ -13,11 +13,35 @@
 								<element maxOccurs="unbounded" minOccurs="0" name="termInfo">
                                                   <complexType>
                                                     <sequence>
-                                                      <element maxOccurs="1" minOccurs="0" name="lineId" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="partnerIntent" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="sellerIntent" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="extNetPricePercentage" type="double"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="term" type="double"/>
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="lineId"
+                                                    		type="string" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="partnerIntent"
+                                                    		type="string" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="sellerIntent"
+                                                    		type="string" />
+                                                    	<element
+                                                    		name="extNetPrice"
+                                                    		type="string" maxOccurs="1" minOccurs="0">
+                                                    	</element>
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="extNetPricePercentage"
+                                                    		type="double" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="term"
+                                                    		type="double" />
                                                     </sequence>
                                                   </complexType>
                                                 </element>
@@ -33,11 +57,35 @@
                   <element maxOccurs="unbounded" minOccurs="0" name="termInfo">
                                                   <complexType>
                                                     <sequence>
-                                                      <element maxOccurs="1" minOccurs="0" name="lineId" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="partnerIntent" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="sellerIntent" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="extNetPricePercentage" type="double"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="term" type="double"/>
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="lineId"
+                                                    		type="string" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="partnerIntent"
+                                                    		type="string" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="sellerIntent"
+                                                    		type="string" />
+                                                    	<element
+                                                    		name="extNetPrice"
+                                                    		type="string" maxOccurs="1" minOccurs="0">
+                                                    	</element>
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="extNetPricePercentage"
+                                                    		type="double" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="term"
+                                                    		type="double" />
                                                     </sequence>
                                                   </complexType>
                                                 </element>
@@ -63,11 +111,35 @@
 								<element maxOccurs="unbounded" minOccurs="0" name="termInfo">
                                                   <complexType>
                                                     <sequence>
-                                                      <element maxOccurs="1" minOccurs="0" name="lineId" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="partnerIntent" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="sellerIntent" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="extNetPricePercentage" type="double"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="term" type="double"/>
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="lineId"
+                                                    		type="string" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="partnerIntent"
+                                                    		type="string" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="sellerIntent"
+                                                    		type="string" />
+                                                    	<element
+                                                    		name="extNetPrice"
+                                                    		type="string" maxOccurs="1" minOccurs="0">
+                                                    	</element>
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="extNetPricePercentage"
+                                                    		type="double" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="term"
+                                                    		type="double" />
                                                     </sequence>
                                                   </complexType>
                                                 </element>
@@ -117,11 +189,35 @@
 								<element maxOccurs="unbounded" minOccurs="0" name="termInfo">
                                                   <complexType>
                                                     <sequence>
-                                                      <element maxOccurs="1" minOccurs="0" name="lineId" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="partnerIntent" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="sellerIntent" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="extNetPricePercentage" type="double"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="term" type="double"/>
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="lineId"
+                                                    		type="string" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="partnerIntent"
+                                                    		type="string" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="sellerIntent"
+                                                    		type="string" />
+                                                    	<element
+                                                    		name="extNetPrice"
+                                                    		type="string" maxOccurs="1" minOccurs="0">
+                                                    	</element>
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="extNetPricePercentage"
+                                                    		type="double" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="term"
+                                                    		type="double" />
                                                     </sequence>
                                                   </complexType>
                                                 </element>
@@ -138,11 +234,35 @@
 								<element maxOccurs="unbounded" minOccurs="0" name="termInfo">
                                                   <complexType>
                                                     <sequence>
-                                                      <element maxOccurs="1" minOccurs="0" name="lineId" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="partnerIntent" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="sellerIntent" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="extNetPricePercentage" type="double"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="term" type="double"/>
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="lineId"
+                                                    		type="string" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="partnerIntent"
+                                                    		type="string" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="sellerIntent"
+                                                    		type="string" />
+                                                    	<element
+                                                    		name="extNetPrice"
+                                                    		type="string" maxOccurs="1" minOccurs="0">
+                                                    	</element>
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="extNetPricePercentage"
+                                                    		type="double" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="term"
+                                                    		type="double" />
                                                     </sequence>
                                                   </complexType>
                                                 </element>
@@ -167,11 +287,35 @@
 								<element maxOccurs="unbounded" minOccurs="0" name="termInfo">
                                                   <complexType>
                                                     <sequence>
-                                                      <element maxOccurs="1" minOccurs="0" name="lineId" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="partnerIntent" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="sellerIntent" type="string"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="extNetPricePercentage" type="double"/>
-                                                      <element maxOccurs="1" minOccurs="0" name="term" type="double"/>
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="lineId"
+                                                    		type="string" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="partnerIntent"
+                                                    		type="string" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="sellerIntent"
+                                                    		type="string" />
+                                                    	<element
+                                                    		name="extNetPrice"
+                                                    		type="string" maxOccurs="1" minOccurs="0">
+                                                    	</element>
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="extNetPricePercentage"
+                                                    		type="double" />
+                                                    	<element
+                                                    		maxOccurs="1"
+                                                    		minOccurs="0"
+                                                    		name="term"
+                                                    		type="double" />
                                                     </sequence>
                                                   </complexType>
                                                 </element>
