@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ASCII"?>
+<annox:package xmlns:annox="http://annox.dev.java.net" xmlns:jaxb="http://annox.dev.java.net/javax.xml.bind.annotation">
+  <annox:class name="ProductDetailsResponse">
+    <jaxb:XmlAccessorType value="NONE"/>
+    <jaxb:XmlType name="ProductDetailsResponseType" propOrder="offerDetails optyDetails preProductDetails preServiceDetails productDetails serviceDetails subscriptionDetails "/>
+    <jaxb:XmlRootElement name="ProductDetailsResponse" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse"/>
+    <annox:field name="offerDetails">
+      <jaxb:XmlElement name="offerDetails" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse"/>
+    </annox:field>
+    <annox:field name="optyDetails">
+      <jaxb:XmlElement name="optyDetails" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse"/>
+    </annox:field>
+    <annox:field name="preProductDetails">
+      <jaxb:XmlElement name="preProductDetails" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse"/>
+    </annox:field>
+    <annox:field name="preServiceDetails">
+      <jaxb:XmlElement name="preServiceDetails" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse"/>
+    </annox:field>
+    <annox:field name="productDetails">
+      <jaxb:XmlElement name="productDetails" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse"/>
+    </annox:field>
+    <annox:field name="serviceDetails">
+      <jaxb:XmlElement name="serviceDetails" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse"/>
+    </annox:field>
+    <annox:field name="subscriptionDetails">
+      <jaxb:XmlElement name="subscriptionDetails" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse"/>
+    </annox:field>
+  </annox:class>
+  <annox:class name="PreProductDetails">
+    <jaxb:XmlAccessorType value="NONE"/>
+    <jaxb:XmlType name="PreProductDetailsType" propOrder="pidMatchingValue productFamily totalACVProductNetAmt totalACVProductNetAmtUSD totalNonACVProductNetAmt totalNonACVProductNetAmtUSD "/>
+    <jaxb:XmlRootElement name="PreProductDetails" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse"/>
+    <annox:field name="pidMatchingValue">
+      <jaxb:XmlElement name="pidMatchingValue" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse"/>
+    </annox:field>
+    <annox:field name="productFamily">
+      <jaxb:XmlElement name="productFamily" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse"/>
+    </annox:field>
+    <annox:field name="totalACVProductNetAmt">
+      <jaxb:XmlElement name="totalACVProductNetAmt" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse" required="false" type="java.lang.Integer"/>
+    </annox:field>
+    <annox:field name="totalACVProductNetAmtUSD">
+      <jaxb:XmlElement name="totalACVProductNetAmtUSD" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse" required="false" type="java.lang.Integer"/>
+    </annox:field>
+    <annox:field name="totalNonACVProductNetAmt">
+      <jaxb:XmlElement name="totalNonACVProductNetAmt" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse" required="false" type="java.lang.Double"/>
+    </annox:field>
+    <annox:field name="totalNonACVProductNetAmtUSD">
+      <jaxb:XmlElement name="totalNonACVProductNetAmtUSD" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse" required="false" type="java.lang.Integer"/>
+    </annox:field>
+  </annox:class>
+  <annox:class name="PreServiceDetails">
+    <jaxb:XmlAccessorType value="NONE"/>
+    <jaxb:XmlType name="PreServiceDetailsType" propOrder="serviceCategory totalACVServiceNetAmt totalACVServiceNetAmtUSD totalNonACVServiceNetAmt totalNonACVServiceNetAmtUSD "/>
+    <jaxb:XmlRootElement name="PreServiceDetails" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse"/>
+    <annox:field name="serviceCategory">
+      <jaxb:XmlElement name="serviceCategory" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse"/>
+    </annox:field>
+    <annox:field name="totalACVServiceNetAmt">
+      <jaxb:XmlElement name="totalACVServiceNetAmt" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse" required="false" type="java.lang.Double"/>
+    </annox:field>
+    <annox:field name="totalACVServiceNetAmtUSD">
+      <jaxb:XmlElement name="totalACVServiceNetAmtUSD" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse" required="false" type="java.lang.Integer"/>
+    </annox:field>
+    <annox:field name="totalNonACVServiceNetAmt">
+      <jaxb:XmlElement name="totalNonACVServiceNetAmt" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse" required="false" type="java.lang.Double"/>
+    </annox:field>
+    <annox:field name="totalNonACVServiceNetAmtUSD">
+      <jaxb:XmlElement name="totalNonACVServiceNetAmtUSD" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse" required="false" type="java.lang.Integer"/>
+    </annox:field>
+  </annox:class>
+  <jaxb:XmlSchema elementFormDefault="QUALIFIED" namespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse"/>
+</annox:package>

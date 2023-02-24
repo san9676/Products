@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<annox:package xmlns:annox="http://annox.dev.java.net" xmlns:jaxb="http://annox.dev.java.net/javax.xml.bind.annotation">
+  <annox:class name="ProductDetailsRoot">
+    <jaxb:XmlAccessorType value="NONE"/>
+    <jaxb:XmlType name="ProductDetailsRootType" propOrder="offerDetails optyDetails subscriptionDetails "/>
+    <jaxb:XmlRootElement name="ProductDetailsRoot" namespace="www.tibco.com/plugin/java/xmlSchema/Test.ProductDetailsRoot"/>
+    <annox:field name="offerDetails">
+      <jaxb:XmlElement name="offerDetails" namespace="www.tibco.com/plugin/java/xmlSchema/Test.ProductDetailsRoot"/>
+    </annox:field>
+    <annox:field name="optyDetails">
+      <jaxb:XmlElement name="optyDetails" namespace="www.tibco.com/plugin/java/xmlSchema/Test.ProductDetailsRoot"/>
+    </annox:field>
+    <annox:field name="subscriptionDetails">
+      <jaxb:XmlElement name="subscriptionDetails" namespace="www.tibco.com/plugin/java/xmlSchema/Test.ProductDetailsRoot"/>
+    </annox:field>
+  </annox:class>
+  <jaxb:XmlSchema elementFormDefault="QUALIFIED" namespace="www.tibco.com/plugin/java/xmlSchema/Test.ProductDetailsRoot"/>
+</annox:package>

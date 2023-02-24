@@ -1,0 +1,57 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "ProductJava",
+    "description" : "ProductJava service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/product/java" : {
+      "post" : {
+        "summary" : "postProductJava",
+        "description" : "postProductJava",
+        "operationId" : "post-product-java",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/ProductDetailReq"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a ProductDetailRes to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/ProductDetailRes"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "ProductDetailRes" : {
+      "type" : "object",
+      "properties" : {
+        "Response" : {
+          "type" : "string"
+        }
+      }
+    },
+    "ProductDetailReq" : {
+      "type" : "object",
+      "properties" : {
+        "payload" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

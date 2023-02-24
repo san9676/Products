@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<annox:class xmlns:annox="http://annox.dev.java.net" xmlns:jaxb="http://annox.dev.java.net/javax.xml.bind.annotation" name="OfferDetails">
+  <jaxb:XmlAccessorType value="NONE"/>
+  <jaxb:XmlType name="OfferDetailsType" propOrder="parentOfferType "/>
+  <jaxb:XmlRootElement name="OfferDetails" namespace="www.tibco.com/plugin/java/xmlSchema/productsResponse.ProductDetailsRes"/>
+  <annox:field name="parentOfferType">
+    <jaxb:XmlElement name="parentOfferType" namespace="www.tibco.com/plugin/java/xmlSchema/productsResponse.ProductDetailsRes"/>
+  </annox:field>
+</annox:class>

@@ -12,6 +12,18 @@
     </scaext:binding>
     <scact:bindingAdjunct xmi:id="_c32cga0PEe2BbMTNbkBMaw" bindingName="RestService1"/>
   </sca:service>
+  <sca:service xmi:id="_nFkjcLQPEe2wl4RMvAQiHw" name="product-java" promote="ComponentproductsTestJava/product-java">
+    <sca:interface.wsdl xmi:id="_nF9lALQPEe2wl4RMvAQiHw" interface="http://xmlns.example.com/20230223121339PLT#wsdl.interface(product-java)" scaext:wsdlLocation="../Processes/test/productsTestJava.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_nGMOgLQPEe2wl4RMvAQiHw" name="RestService" path="/product/java" docBasePath="http://localhost:7777/ProductsPOC" docResourcePath="ProductJava" basePath="/" connector="productspoc.Product" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/test.productsTestJava-ProductJava.json">
+      <operation xmi:id="_nHYhULQPEe2wl4RMvAQiHw" operationName="post" nickname="post-product-java" httpMethod="POST" notes="postProductJava" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_nIcRQLQPEe2wl4RMvAQiHw"/>
+      <advancedConfig xmi:id="_nGMOgbQPEe2wl4RMvAQiHw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_nHYhUbQPEe2wl4RMvAQiHw" bindingName="RestService"/>
+  </sca:service>
   <sca:property xmi:id="_cPZNEKxZEe2zIeZO5r2jdg" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_cPrg8KxZEe2zIeZO5r2jdg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_cPxnkKxZEe2zIeZO5r2jdg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
@@ -27,6 +39,15 @@
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_pxpUUaxdEe2zIeZO5r2jdg" processName="productspoc.Product"/>
     <sca:service xmi:id="_c27PcK0PEe2BbMTNbkBMaw" name="v1-productdetails">
       <sca:interface.wsdl xmi:id="_c29EoK0PEe2BbMTNbkBMaw" interface="http://xmlns.example.com/20230214171934PLT#wsdl.interface(v1-productdetails)"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_OxLJcLG0Ee2UuMj2blGj8Q" name="ComponentjavaTest" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_OxLJcbG0Ee2UuMj2blGj8Q" processName="test.javaTest" autoStart="false"/>
+  </sca:component>
+  <sca:component xmi:id="_Z_lzcLNFEe2Eve8gG8gP8Q" name="ComponentproductsTestJava" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Z_lzcbNFEe2Eve8gG8gP8Q" processName="test.productsTestJava"/>
+    <sca:service xmi:id="_nFec0LQPEe2wl4RMvAQiHw" name="product-java">
+      <sca:interface.wsdl xmi:id="_nFfq8LQPEe2wl4RMvAQiHw" interface="http://xmlns.example.com/20230223121339PLT#wsdl.interface(product-java)"/>
     </sca:service>
   </sca:component>
 </sca:composite>

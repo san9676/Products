@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema elementFormDefault="qualified" version="1.0" targetNamespace="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse" xmlns:tns="www.tibco.com/plugin/java/xmlSchema/response.ProductDetailsResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="OfferDetails" type="tns:OfferDetailsType"/>
+
+  <xs:element name="OptyDetails" type="tns:OptyDetailsType"/>
+
+  <xs:element name="PreProductDetails" type="tns:PreProductDetailsType"/>
+
+  <xs:element name="PreServiceDetails" type="tns:PreServiceDetailsType"/>
+
+  <xs:element name="ProductDetailsResponse" type="tns:ProductDetailsResponseType"/>
+
+  <xs:element name="SubscriptionDetails" type="tns:SubscriptionDetailsType"/>
+
+  <xs:complexType name="ProductDetailsResponseType">
+    <xs:sequence>
+      <xs:element name="offerDetails" type="tns:OfferDetailsType" minOccurs="0"/>
+      <xs:element name="optyDetails" type="tns:OptyDetailsType" minOccurs="0"/>
+      <xs:element name="preProductDetails" type="tns:PreProductDetailsType" minOccurs="0"/>
+      <xs:element name="preServiceDetails" type="tns:PreServiceDetailsType" minOccurs="0"/>
+      <xs:element name="productDetails" type="tns:PreProductDetailsType" minOccurs="0"/>
+      <xs:element name="serviceDetails" type="tns:PreServiceDetailsType" minOccurs="0"/>
+      <xs:element name="subscriptionDetails" type="tns:SubscriptionDetailsType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="OfferDetailsType">
+    <xs:sequence>
+      <xs:element name="parentOfferType" type="tns:parentOfferType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parentOfferType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="subOfferType" type="tns:subOfferType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="subOfferType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="recurringFlag" type="xs:string" minOccurs="0"/>
+      <xs:element name="netPrice" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="OptyDetailsType">
+    <xs:sequence>
+      <xs:element name="combinedServiceFlag" type="xs:string" minOccurs="0"/>
+      <xs:element name="currencyCode" type="xs:string" minOccurs="0"/>
+      <xs:element name="eaFlag" type="xs:string" minOccurs="0"/>
+      <xs:element name="optyNumber" type="xs:int" minOccurs="0"/>
+      <xs:element name="preTotalBuyProgNetAmt" type="xs:int" minOccurs="0"/>
+      <xs:element name="preTotalBuyProgNetAmtUSD" type="xs:int" minOccurs="0"/>
+      <xs:element name="preTotalProdAttriNetAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="preTotalProdAttriNetAmtUSD" type="xs:int" minOccurs="0"/>
+      <xs:element name="preTotalSerAttriNetAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="preTotalSerAttriNetAmtUSD" type="xs:int" minOccurs="0"/>
+      <xs:element name="publishedDate" type="xs:string" minOccurs="0"/>
+      <xs:element name="quoteId" type="xs:long" minOccurs="0"/>
+      <xs:element name="sfdcOptyNumber" type="xs:string" minOccurs="0"/>
+      <xs:element name="totalBuyProgNetAmt" type="xs:int" minOccurs="0"/>
+      <xs:element name="totalBuyProgNetAmtUSD" type="xs:int" minOccurs="0"/>
+      <xs:element name="totalProdAttriNetAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="totalProdAttriNetAmtUSD" type="xs:int" minOccurs="0"/>
+      <xs:element name="totalSerAttriNetAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="totalSerAttriNetAmtUSD" type="xs:int" minOccurs="0"/>
+      <xs:element name="user" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PreProductDetailsType">
+    <xs:sequence>
+      <xs:element name="pidMatchingValue" type="tns:pidMatchingValue" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="productFamily" type="tns:pidMatchingValue" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="totalACVProductNetAmt" type="xs:int" minOccurs="0"/>
+      <xs:element name="totalACVProductNetAmtUSD" type="xs:int" minOccurs="0"/>
+      <xs:element name="totalNonACVProductNetAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="totalNonACVProductNetAmtUSD" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="pidMatchingValue">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="termInfo" type="tns:termInfo" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="termInfo">
+    <xs:sequence>
+      <xs:element name="lineId" type="xs:string" minOccurs="0"/>
+      <xs:element name="partnerIntent" type="xs:string" minOccurs="0"/>
+      <xs:element name="sellerIntent" type="xs:string" minOccurs="0"/>
+      <xs:element name="extNetPrice" type="xs:double"/>
+      <xs:element name="extNetPricePercentage" type="xs:double"/>
+      <xs:element name="term" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PreServiceDetailsType">
+    <xs:sequence>
+      <xs:element name="serviceCategory" type="tns:pidMatchingValue" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="totalACVServiceNetAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="totalACVServiceNetAmtUSD" type="xs:int" minOccurs="0"/>
+      <xs:element name="totalNonACVServiceNetAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="totalNonACVServiceNetAmtUSD" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SubscriptionDetailsType">
+    <xs:sequence>
+      <xs:element name="partDetails" type="tns:partDetails" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="partDetails">
+    <xs:sequence>
+      <xs:element name="partNumber" type="xs:string" minOccurs="0"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="quantity" type="xs:int"/>
+      <xs:element name="initialTerm" type="xs:string" minOccurs="0"/>
+      <xs:element name="autoRenewalTerm" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<annox:class xmlns:annox="http://annox.dev.java.net" xmlns:jaxb="http://annox.dev.java.net/javax.xml.bind.annotation" name="ServiceDetails">
+  <jaxb:XmlAccessorType value="NONE"/>
+  <jaxb:XmlType name="ServiceDetailsType" propOrder="serviceCategory totalACVServiceNetAmt totalACVServiceNetAmtUSD totalNonACVServiceNetAmt totalNonACVServiceNetAmtUSD "/>
+  <jaxb:XmlRootElement name="ServiceDetails" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot"/>
+  <annox:field name="serviceCategory">
+    <jaxb:XmlElement name="serviceCategory" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot"/>
+  </annox:field>
+  <annox:field name="totalACVServiceNetAmt">
+    <jaxb:XmlElement name="totalACVServiceNetAmt" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot" required="false" type="java.lang.Double"/>
+  </annox:field>
+  <annox:field name="totalACVServiceNetAmtUSD">
+    <jaxb:XmlElement name="totalACVServiceNetAmtUSD" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot" required="false" type="java.lang.Integer"/>
+  </annox:field>
+  <annox:field name="totalNonACVServiceNetAmt">
+    <jaxb:XmlElement name="totalNonACVServiceNetAmt" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot" required="false" type="java.lang.Double"/>
+  </annox:field>
+  <annox:field name="totalNonACVServiceNetAmtUSD">
+    <jaxb:XmlElement name="totalNonACVServiceNetAmtUSD" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot" required="false" type="java.lang.Integer"/>
+  </annox:field>
+</annox:class>

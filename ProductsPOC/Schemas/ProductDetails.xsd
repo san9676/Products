@@ -616,31 +616,21 @@
   </complexType>
   <element name="ProductDetails" type="tns:ProductDetailsType"/>
 
-  <element name="Response">
-  	<complexType>
-  		<sequence>
-  			<element name="name" type="string" maxOccurs="1" minOccurs="0"></element>
-            <element maxOccurs="1" minOccurs="0" name="lineId" type="string"/>
-            <element maxOccurs="1" minOccurs="0" name="partnerIntent" type="string"/>
-            <element maxOccurs="1" minOccurs="0" name="sellerIntent" type="string"/>
-            <element maxOccurs="1" minOccurs="0" name="extNetPricePercentage" type="double"/>
-            <element maxOccurs="1" minOccurs="0" name="term" type="double"/>
-  		</sequence>
-  	</complexType>
-  </element>
 
-  <element name="ResponseRoot">
-  	<complexType>
-  		<sequence>
-  			<element ref="tns:Response" maxOccurs="unbounded" minOccurs="0"></element>
-  		</sequence>
-  	</complexType>
-  </element>
 
   <element name="ProductDetailReq">
   	<complexType>
   		<sequence>
   			<element name="payload" type="string" maxOccurs="1" minOccurs="0"></element>
+  		</sequence>
+  	</complexType>
+  </element>
+
+
+  <element name="ProductDetailRes">
+  	<complexType>
+  		<sequence>
+  			<element name="Response" type="string" minOccurs="0" maxOccurs="1"></element>
   		</sequence>
   	</complexType>
   </element>

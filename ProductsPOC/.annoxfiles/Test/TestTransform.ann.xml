@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<annox:class xmlns:annox="http://annox.dev.java.net" xmlns:jaxb="http://annox.dev.java.net/javax.xml.bind.annotation" name="TestTransform">
+  <jaxb:XmlAccessorType value="NONE"/>
+  <jaxb:XmlType name="TestTransformType" propOrder="offerdetails optydetails output produtDetailsRoot subscriptiondetails "/>
+  <jaxb:XmlRootElement name="TestTransform" namespace="www.tibco.com/plugin/java/xmlSchema/Test.TestTransform"/>
+  <annox:field name="offerdetails">
+    <jaxb:XmlElement name="offerdetails" namespace="www.tibco.com/plugin/java/xmlSchema/Test.TestTransform"/>
+  </annox:field>
+  <annox:field name="optydetails">
+    <jaxb:XmlElement name="optydetails" namespace="www.tibco.com/plugin/java/xmlSchema/Test.TestTransform"/>
+  </annox:field>
+  <annox:field name="output">
+    <jaxb:XmlElement name="output" namespace="www.tibco.com/plugin/java/xmlSchema/Test.TestTransform"/>
+  </annox:field>
+  <annox:field name="produtDetailsRoot">
+    <jaxb:XmlElement name="produtDetailsRoot" namespace="www.tibco.com/plugin/java/xmlSchema/Test.TestTransform"/>
+  </annox:field>
+  <annox:field name="subscriptiondetails">
+    <jaxb:XmlElement name="subscriptiondetails" namespace="www.tibco.com/plugin/java/xmlSchema/Test.TestTransform"/>
+  </annox:field>
+</annox:class>

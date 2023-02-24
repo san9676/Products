@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema elementFormDefault="qualified" version="1.0" targetNamespace="www.tibco.com/plugin/java/xmlSchema/sample.OfferDetails" xmlns:tns="www.tibco.com/plugin/java/xmlSchema/sample.OfferDetails" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="OfferDetails" type="tns:OfferDetailsType"/>
+
+  <xs:complexType name="OfferDetailsType">
+    <xs:sequence>
+      <xs:element name="parentOfferType" type="tns:parentOfferType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parentOfferType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="subOfferType" type="tns:subOfferType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="subOfferType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="recurringFlag" type="xs:string" minOccurs="0"/>
+      <xs:element name="netPrice" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

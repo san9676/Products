@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<annox:class xmlns:annox="http://annox.dev.java.net" xmlns:jaxb="http://annox.dev.java.net/javax.xml.bind.annotation" name="ProductDetailsRoot">
+  <jaxb:XmlAccessorType value="NONE"/>
+  <jaxb:XmlType name="ProductDetailsRootType" propOrder="offerDetails optyDetails preProductDetails preServiceDetails productDetails serviceDetails subscriptionDetails "/>
+  <jaxb:XmlRootElement name="ProductDetailsRoot" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot"/>
+  <annox:field name="offerDetails">
+    <jaxb:XmlElement name="offerDetails" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot"/>
+  </annox:field>
+  <annox:field name="optyDetails">
+    <jaxb:XmlElement name="optyDetails" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot"/>
+  </annox:field>
+  <annox:field name="preProductDetails">
+    <jaxb:XmlElement name="preProductDetails" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot"/>
+  </annox:field>
+  <annox:field name="preServiceDetails">
+    <jaxb:XmlElement name="preServiceDetails" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot"/>
+  </annox:field>
+  <annox:field name="productDetails">
+    <jaxb:XmlElement name="productDetails" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot"/>
+  </annox:field>
+  <annox:field name="serviceDetails">
+    <jaxb:XmlElement name="serviceDetails" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot"/>
+  </annox:field>
+  <annox:field name="subscriptionDetails">
+    <jaxb:XmlElement name="subscriptionDetails" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot"/>
+  </annox:field>
+</annox:class>

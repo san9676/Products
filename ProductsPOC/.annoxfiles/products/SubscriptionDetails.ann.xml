@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<annox:class xmlns:annox="http://annox.dev.java.net" xmlns:jaxb="http://annox.dev.java.net/javax.xml.bind.annotation" name="SubscriptionDetails">
+  <jaxb:XmlAccessorType value="NONE"/>
+  <jaxb:XmlType name="SubscriptionDetailsType" propOrder="partDetails "/>
+  <jaxb:XmlRootElement name="SubscriptionDetails" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot"/>
+  <annox:field name="partDetails">
+    <jaxb:XmlElement name="partDetails" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot"/>
+  </annox:field>
+</annox:class>

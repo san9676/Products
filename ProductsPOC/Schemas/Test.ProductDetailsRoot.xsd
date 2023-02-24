@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema elementFormDefault="qualified" version="1.0" targetNamespace="www.tibco.com/plugin/java/xmlSchema/Test.ProductDetailsRoot" xmlns:tns="www.tibco.com/plugin/java/xmlSchema/Test.ProductDetailsRoot" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="OfferDetails" type="tns:OfferDetailsType"/>
+
+  <xs:element name="OptyDetails" type="tns:OptyDetailsType"/>
+
+  <xs:element name="ProductDetailsRoot" type="tns:ProductDetailsRootType"/>
+
+  <xs:element name="SubscriptionDetails" type="tns:SubscriptionDetailsType"/>
+
+  <xs:complexType name="ProductDetailsRootType">
+    <xs:sequence>
+      <xs:element name="offerDetails" type="tns:OfferDetailsType" minOccurs="0"/>
+      <xs:element name="optyDetails" type="tns:OptyDetailsType" minOccurs="0"/>
+      <xs:element name="subscriptionDetails" type="tns:SubscriptionDetailsType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="OfferDetailsType">
+    <xs:sequence>
+      <xs:element name="parentOfferType" type="tns:parentOfferType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parentOfferType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="subOfferType" type="tns:subOfferType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="subOfferType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="recurringFlag" type="xs:string" minOccurs="0"/>
+      <xs:element name="netPrice" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="OptyDetailsType">
+    <xs:sequence>
+      <xs:element name="combinedServiceFlag" type="xs:string" minOccurs="0"/>
+      <xs:element name="currencyCode" type="xs:string" minOccurs="0"/>
+      <xs:element name="eaFlag" type="xs:string" minOccurs="0"/>
+      <xs:element name="optyNumber" type="xs:int" minOccurs="0"/>
+      <xs:element name="preTotalBuyProgNetAmt" type="xs:int" minOccurs="0"/>
+      <xs:element name="preTotalBuyProgNetAmtUSD" type="xs:int" minOccurs="0"/>
+      <xs:element name="preTotalProdAttriNetAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="preTotalProdAttriNetAmtUSD" type="xs:int" minOccurs="0"/>
+      <xs:element name="preTotalSerAttriNetAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="preTotalSerAttriNetAmtUSD" type="xs:int" minOccurs="0"/>
+      <xs:element name="publishedDate" type="xs:string" minOccurs="0"/>
+      <xs:element name="quoteId" type="xs:long" minOccurs="0"/>
+      <xs:element name="sfdcOptyNumber" type="xs:string" minOccurs="0"/>
+      <xs:element name="totalBuyProgNetAmt" type="xs:int" minOccurs="0"/>
+      <xs:element name="totalBuyProgNetAmtUSD" type="xs:int" minOccurs="0"/>
+      <xs:element name="totalProdAttriNetAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="totalProdAttriNetAmtUSD" type="xs:int" minOccurs="0"/>
+      <xs:element name="totalSerAttriNetAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="totalSerAttriNetAmtUSD" type="xs:int" minOccurs="0"/>
+      <xs:element name="user" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SubscriptionDetailsType">
+    <xs:sequence>
+      <xs:element name="partDetails" type="tns:partDetails" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="partDetails">
+    <xs:sequence>
+      <xs:element name="partNumber" type="xs:string" minOccurs="0"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="quantity" type="xs:int"/>
+      <xs:element name="initialTerm" type="xs:string" minOccurs="0"/>
+      <xs:element name="autoRenewalTerm" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

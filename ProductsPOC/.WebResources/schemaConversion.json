@@ -18,5 +18,10 @@
         "jsonSchemaLocation": "/ProductsPOC/Service Descriptors/test.Resource-Resource.json",
         "conversionType": "linked",
         "xsdSchemaTargetNamespace": "http://tns.eniquesol.com/productDetailsResposne"
+    },
+    {
+        "jsonSchemaLocation": "/ProductsPOC/Service Descriptors/test.productsTestJava-ProductJava.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1676373766056"
     }
 ]}

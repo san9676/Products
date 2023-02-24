@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema elementFormDefault="qualified" version="1.0" targetNamespace="www.tibco.com/plugin/java/xmlSchema/sample.PreProductDetails" xmlns:tns="www.tibco.com/plugin/java/xmlSchema/sample.PreProductDetails" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="PreProductDetails" type="tns:PreProductDetailsType"/>
+
+  <xs:complexType name="PreProductDetailsType">
+    <xs:sequence>
+      <xs:element name="pidMatchingValue" type="tns:pidMatchingValue" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="productFamily" type="tns:productFamily" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="totalACVProductNetAmt" type="xs:int" minOccurs="0"/>
+      <xs:element name="totalACVProductNetAmtUSD" type="xs:int" minOccurs="0"/>
+      <xs:element name="totalNonACVProductNetAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="totalNonACVProductNetAmtUSD" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="pidMatchingValue">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="beInfo" type="tns:beInfo" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="beInfo">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="subBeInfo" type="tns:subBeInfo" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="subBeInfo">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="acvDetails" type="tns:acvDetails" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="categoryDetails" type="tns:categoryDetails" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="acvDetails">
+    <xs:sequence>
+      <xs:element name="acvFlag" type="xs:string" minOccurs="0"/>
+      <xs:element name="roDetails" type="tns:roDetails" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="roDetails">
+    <xs:sequence>
+      <xs:element name="roFlag" type="xs:string" minOccurs="0"/>
+      <xs:element name="buyProg" type="tns:buyProg" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="buyProg">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="termInfo" type="tns:termInfo" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="termInfo">
+    <xs:sequence>
+      <xs:element name="lineId" type="xs:string" minOccurs="0"/>
+      <xs:element name="partnerIntent" type="xs:string" minOccurs="0"/>
+      <xs:element name="sellerIntent" type="xs:string" minOccurs="0"/>
+      <xs:element name="extNetPrice" type="xs:double"/>
+      <xs:element name="term" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="categoryDetails">
+    <xs:sequence>
+      <xs:element name="hwOrSwCategory" type="xs:string" minOccurs="0"/>
+      <xs:element name="acvDetails" type="tns:acvDetails" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="productFamily">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="beInfo" type="tns:beInfo" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ASCII"?>
+<annox:class xmlns:annox="http://annox.dev.java.net" xmlns:jaxb="http://annox.dev.java.net/javax.xml.bind.annotation" name="OptyDetails">
+  <jaxb:XmlAccessorType value="NONE"/>
+  <jaxb:XmlType name="OptyDetailsType" propOrder="combinedServiceFlag currencyCode eaFlag optyNumber preTotalBuyProgNetAmt preTotalBuyProgNetAmtUSD preTotalProdAttriNetAmt preTotalProdAttriNetAmtUSD preTotalSerAttriNetAmt preTotalSerAttriNetAmtUSD publishedDate quoteId sfdcOptyNumber totalBuyProgNetAmt totalBuyProgNetAmtUSD totalProdAttriNetAmt totalProdAttriNetAmtUSD totalSerAttriNetAmt totalSerAttriNetAmtUSD user "/>
+  <jaxb:XmlRootElement name="OptyDetails" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot"/>
+  <annox:field name="combinedServiceFlag">
+    <jaxb:XmlElement name="combinedServiceFlag" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot"/>
+  </annox:field>
+  <annox:field name="currencyCode">
+    <jaxb:XmlElement name="currencyCode" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot"/>
+  </annox:field>
+  <annox:field name="eaFlag">
+    <jaxb:XmlElement name="eaFlag" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot"/>
+  </annox:field>
+  <annox:field name="optyNumber">
+    <jaxb:XmlElement name="optyNumber" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot" required="false" type="java.lang.Integer"/>
+  </annox:field>
+  <annox:field name="preTotalBuyProgNetAmt">
+    <jaxb:XmlElement name="preTotalBuyProgNetAmt" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot" required="false" type="java.lang.Integer"/>
+  </annox:field>
+  <annox:field name="preTotalBuyProgNetAmtUSD">
+    <jaxb:XmlElement name="preTotalBuyProgNetAmtUSD" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot" required="false" type="java.lang.Integer"/>
+  </annox:field>
+  <annox:field name="preTotalProdAttriNetAmt">
+    <jaxb:XmlElement name="preTotalProdAttriNetAmt" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot" required="false" type="java.lang.Double"/>
+  </annox:field>
+  <annox:field name="preTotalProdAttriNetAmtUSD">
+    <jaxb:XmlElement name="preTotalProdAttriNetAmtUSD" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot" required="false" type="java.lang.Integer"/>
+  </annox:field>
+  <annox:field name="preTotalSerAttriNetAmt">
+    <jaxb:XmlElement name="preTotalSerAttriNetAmt" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot" required="false" type="java.lang.Double"/>
+  </annox:field>
+  <annox:field name="preTotalSerAttriNetAmtUSD">
+    <jaxb:XmlElement name="preTotalSerAttriNetAmtUSD" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot" required="false" type="java.lang.Integer"/>
+  </annox:field>
+  <annox:field name="publishedDate">
+    <jaxb:XmlElement name="publishedDate" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot"/>
+  </annox:field>
+  <annox:field name="quoteId">
+    <jaxb:XmlElement name="quoteId" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot" required="false" type="java.lang.Long"/>
+  </annox:field>
+  <annox:field name="sfdcOptyNumber">
+    <jaxb:XmlElement name="sfdcOptyNumber" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot"/>
+  </annox:field>
+  <annox:field name="totalBuyProgNetAmt">
+    <jaxb:XmlElement name="totalBuyProgNetAmt" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot" required="false" type="java.lang.Integer"/>
+  </annox:field>
+  <annox:field name="totalBuyProgNetAmtUSD">
+    <jaxb:XmlElement name="totalBuyProgNetAmtUSD" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot" required="false" type="java.lang.Integer"/>
+  </annox:field>
+  <annox:field name="totalProdAttriNetAmt">
+    <jaxb:XmlElement name="totalProdAttriNetAmt" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot" required="false" type="java.lang.Double"/>
+  </annox:field>
+  <annox:field name="totalProdAttriNetAmtUSD">
+    <jaxb:XmlElement name="totalProdAttriNetAmtUSD" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot" required="false" type="java.lang.Integer"/>
+  </annox:field>
+  <annox:field name="totalSerAttriNetAmt">
+    <jaxb:XmlElement name="totalSerAttriNetAmt" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot" required="false" type="java.lang.Double"/>
+  </annox:field>
+  <annox:field name="totalSerAttriNetAmtUSD">
+    <jaxb:XmlElement name="totalSerAttriNetAmtUSD" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot" required="false" type="java.lang.Integer"/>
+  </annox:field>
+  <annox:field name="user">
+    <jaxb:XmlElement name="user" namespace="www.tibco.com/plugin/java/xmlSchema/products.ProductDetailsRoot"/>
+  </annox:field>
+</annox:class>

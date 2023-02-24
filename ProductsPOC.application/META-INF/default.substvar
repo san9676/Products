@@ -93,7 +93,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//ProductsPOC///Connections/HTTP/Port</name>
-			<value>10347</value>
+			<value>10348</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>

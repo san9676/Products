@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<annox:class xmlns:annox="http://annox.dev.java.net" xmlns:jaxb="http://annox.dev.java.net/javax.xml.bind.annotation" name="PreProductDetails">
+  <jaxb:XmlAccessorType value="NONE"/>
+  <jaxb:XmlType name="PreProductDetailsType" propOrder="pidMatchingValue productFamily totalACVProductNetAmt totalACVProductNetAmtUSD totalNonACVProductNetAmt totalNonACVProductNetAmtUSD "/>
+  <jaxb:XmlRootElement name="PreProductDetails" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot"/>
+  <annox:field name="pidMatchingValue">
+    <jaxb:XmlElement name="pidMatchingValue" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot"/>
+  </annox:field>
+  <annox:field name="productFamily">
+    <jaxb:XmlElement name="productFamily" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot"/>
+  </annox:field>
+  <annox:field name="totalACVProductNetAmt">
+    <jaxb:XmlElement name="totalACVProductNetAmt" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot" required="false" type="java.lang.Integer"/>
+  </annox:field>
+  <annox:field name="totalACVProductNetAmtUSD">
+    <jaxb:XmlElement name="totalACVProductNetAmtUSD" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot" required="false" type="java.lang.Integer"/>
+  </annox:field>
+  <annox:field name="totalNonACVProductNetAmt">
+    <jaxb:XmlElement name="totalNonACVProductNetAmt" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot" required="false" type="java.lang.Double"/>
+  </annox:field>
+  <annox:field name="totalNonACVProductNetAmtUSD">
+    <jaxb:XmlElement name="totalNonACVProductNetAmtUSD" namespace="www.tibco.com/plugin/java/xmlSchema/sample.ProductDetailsRoot" required="false" type="java.lang.Integer"/>
+  </annox:field>
+</annox:class>

@@ -1,5 +1,9 @@
 {
-    "records": [],
+    "records": [{
+        "name": "Cloud",
+        "items": [],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
     "resources": [
         {
             "location": "Service Descriptors/productspoc.Product-Product.json",
@@ -7,6 +11,10 @@
         },
         {
             "location": "Service Descriptors/test.Resource-Resource.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/test.productsTestJava-ProductJava.json",
             "type": "generated"
         }
     ]
