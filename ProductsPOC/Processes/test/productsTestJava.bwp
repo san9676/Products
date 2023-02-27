@@ -546,7 +546,8 @@
                     name="httpHeaders" tibex:source="bw.rest"/>
             </wsdl:message>
             <wsdl:message name="postResponse">
-                <wsdl:part element="extns1:ProductDetailRes" name="item" tibex:hasMultipleNamespaces="false"/>
+                <wsdl:part name="item"
+                    tibex:hasMultipleNamespaces="false" type="xsd:string"/>
             </wsdl:message>
             <wsdl:message name="post4XXFaultMessage">
                 <wsdl:part element="extns:client4XXError" name="clientError"/>
@@ -1243,10 +1244,10 @@
                                 tibex:xpdlId="a7f2dbf2-e1e2-4d33-9fcf-0db2a46ec4b3" variable="postOut-input">
                                 <tibex:inputBindings>
                                     <tibex:partBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://xmlns.example.com/20230223121339PLT&quot; xmlns:tns7=&quot;http://tns.tibco.com/bw/json/1676373766056&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;JavaInvoke&quot;/>&#xa;    &lt;xsl:template name=&quot;postOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns7:ProductDetailRes>&#xa;            &lt;xsl:if test=&quot;$JavaInvoke/output&quot;>&#xa;                &lt;tns7:Response>&#xa;                    &lt;xsl:value-of select=&quot;$JavaInvoke/output&quot;/>&#xa;                &lt;/tns7:Response>&#xa;            &lt;/xsl:if>&#xa;        &lt;/tns7:ProductDetailRes>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://xmlns.example.com/20230223121339PLT&quot; xmlns:tns7=&quot;http://tns.tibco.com/bw/json/1676373766056&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;JavaInvoke&quot;/>&#xa;    &lt;xsl:template name=&quot;postOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;item>&#xa;            &lt;xsl:value-of select=&quot;$JavaInvoke/output&quot;/>&#xa;        &lt;/item>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns1="http://xmlns.example.com/20230223121339PLT" xmlns:tns7="http://tns.tibco.com/bw/json/1676373766056" version="2.0"&gt;&lt;xsl:param name="JavaInvoke"/&gt;&lt;xsl:template name="postOut-input" match="/"&gt;&lt;tns1:postResponse&gt;&lt;item&gt;&lt;tns7:ProductDetailRes&gt;&lt;xsl:if test="$JavaInvoke/output"&gt;&lt;tns7:Response&gt;&lt;xsl:value-of select="$JavaInvoke/output"/&gt;&lt;/tns7:Response&gt;&lt;/xsl:if&gt;&lt;/tns7:ProductDetailRes&gt;&lt;/item&gt;&lt;/tns1:postResponse&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns1="http://xmlns.example.com/20230223121339PLT" xmlns:tns7="http://tns.tibco.com/bw/json/1676373766056" version="2.0"&gt;&lt;xsl:param name="JavaInvoke"/&gt;&lt;xsl:template name="postOut-input" match="/"&gt;&lt;tns1:postResponse&gt;&lt;item&gt;&lt;xsl:value-of select="$JavaInvoke/output"/&gt;&lt;/item&gt;&lt;/tns1:postResponse&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
                                 <bpws:targets>
                                     <bpws:target linkName="JavaInvokeTopostOut"/>
                                 </bpws:targets>

@@ -27,9 +27,9 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "a ProductDetailRes to be returned",
+            "description" : "a string to be returned",
             "schema" : {
-              "$ref" : "#/definitions/ProductDetailRes"
+              "type" : "string"
             }
           }
         }
@@ -37,14 +37,6 @@
     }
   },
   "definitions" : {
-    "ProductDetailRes" : {
-      "type" : "object",
-      "properties" : {
-        "Response" : {
-          "type" : "string"
-        }
-      }
-    },
     "ProductDetailReq" : {
       "type" : "object",
       "properties" : {
